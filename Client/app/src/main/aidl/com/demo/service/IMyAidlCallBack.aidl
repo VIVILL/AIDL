@@ -1,9 +1,9 @@
-// IMyAidlInterface.aidl
+// IMyAidlCallBack.aidl
 package com.demo.service;
 
 // Declare any non-default types here with import statements
-import com.demo.service.IMyAidlCallBack;
-interface IMyAidlInterface {
+
+interface IMyAidlCallBack {
     /**
      * Demonstrates some basic types that you can use as parameters
      * and return values in AIDL.
@@ -11,7 +11,6 @@ interface IMyAidlInterface {
    /* void basicTypes(int anInt, long aLong, boolean aBoolean, float aFloat,
             double aDouble, String aString);*/
 
-   String getName();
-   void setCallback(IMyAidlCallBack cb);
-   void initData();
+   	void onCallBack(inout byte[] data);
+
 }

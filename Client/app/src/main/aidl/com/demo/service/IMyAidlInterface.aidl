@@ -2,7 +2,7 @@
 package com.demo.service;
 
 // Declare any non-default types here with import statements
-
+import com.demo.service.IMyAidlCallBack;
 interface IMyAidlInterface {
     /**
      * Demonstrates some basic types that you can use as parameters
@@ -12,5 +12,7 @@ interface IMyAidlInterface {
             double aDouble, String aString);*/
 
    String getName();
+   void setCallback(IMyAidlCallBack cb);
+   void initData();
 
 }
